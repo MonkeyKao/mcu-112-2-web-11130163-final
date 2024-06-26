@@ -1,0 +1,23 @@
+<img [src]="imgUrl" />
+<div class="content">
+  <strong [class.notShow]="!isShow"> {{id}}.{{productName}}</strong>
+  <span>{{createDate | date:'yyyy-MM-dd'}}</span>
+</div>
+<div>
+  @for(author of authors;track author){
+  <span>{{author}}</span>
+  @if(!$last){
+  <span></span>
+  } }
+</div>
+<div class="company">
+  <span>{{company}}</span>
+  <span>{{price | currency}}</span>
+</div>
+<div class="button">
+  <button type="button" (click)="view.emit()">檢視</button>
+  <span>
+    <button type="button" class="edit" (click)="edit.emit()">編輯</button>
+    <button type="button" class="remove" (click)="remove.emit()">刪除</button>
+  </span>
+</div>

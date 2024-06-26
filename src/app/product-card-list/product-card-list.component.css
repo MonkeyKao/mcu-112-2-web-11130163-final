@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  flex-basis: calc(20% - 40px);
+}
+
+div.data-empty {
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 200pz;
+  font: weight 200px;
+  text-align: center;
+}
