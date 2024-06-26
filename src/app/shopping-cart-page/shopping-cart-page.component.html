@@ -16,16 +16,20 @@
   </section>
   <section class="detail">
     <h3>購買項目</h3>
-    <div class="item">
-      <div class="id">1</div>
-      <div class="name">x</div>
-      <div class="count">
-        <input type="number" />
+    <div formArrayName="details">
+      @for(control of details.controls;track $index){
+      <div class="item" [formGroupName]="$index">
+        <div class="id">{{ control.value.id }}</div>
+        <div class="name">{{ control.value.product?.name }}</div>
+        <div class="count">
+          <input type="number" formControlName="count" />
+        </div>
+        <div class="price">{{ control.value.price | currency }}</div>
+        <div class="delete">
+          <button type="button">刪除</button>
+        </div>
       </div>
-      <div class="price">1</div>
-      <div class="delete">
-        <button type="button">刪除</button>
-      </div>
+      }
     </div>
   </section>
 </div>
