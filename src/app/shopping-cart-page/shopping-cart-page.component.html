@@ -4,14 +4,23 @@
     <div class="form-item">
       <label>姓名</label>
       <input type="text" formControlName="name" />
+      @if(name.hasError('required')){
+      <span class="error-message">請輸入姓名</span>
+      }
     </div>
     <div class="form-item">
       <label>地址</label>
       <input type="text" formControlName="address" />
+      @if(address.hasError('required')){
+      <span class="error-message">請輸入地址</span>
+      }
     </div>
     <div class="form-item">
       <label>電話</label>
       <input type="text" formControlName="telephone" />
+      @if(telephone.hasError('required')){
+      <span class="error-message">請輸入電話</span>
+      }
     </div>
   </section>
   <section class="detail">
@@ -34,5 +43,7 @@
   </section>
 </div>
 <div class="toolbar">
-  <button type="button">送出訂單</button>
+  <button type="button" [disabled]="form.invalid || details.length === 0">
+    送出訂單
+  </button>
 </div>
