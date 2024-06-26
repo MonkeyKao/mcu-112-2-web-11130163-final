@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "書籍A",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000
+    },
+    {
+      "name": "書籍B",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 2
+    },
+    {
+      "name": "書籍C",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 3
+    },
+    {
+      "name": "書籍D",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 4
+    },
+    {
+      "name": "書籍E",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 5
+    },
+    {
+      "name": "書籍F",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 6
+    },
+    {
+      "name": "書籍G",
+      "authors": ["作者甲", "作者乙", "作者丙"],
+      "company": "博碩文化",
+      "isShow": true,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2023-10-17T00:00:00.000+08:00",
+      "price": 10000,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "a",
+      "authors": ["dfg", "oooo"],
+      "company": "company",
+      "isShow": false,
+      "discount": false,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-26T09:09:53.400Z",
+      "price": "585"
+    }
+  ]
+}
