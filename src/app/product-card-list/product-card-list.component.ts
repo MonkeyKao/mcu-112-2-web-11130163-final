@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output, numberAttribute } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  numberAttribute,
+} from '@angular/core';
 import { PaginationComponent } from '../pagination/pagination.component';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { Product } from './../model/product';
@@ -26,7 +32,7 @@ export class ProductCardListComponent {
   pageIndexChange = new EventEmitter<number>();
 
   @Output()
-  edit = new EventEmitter<Product>();
+  addToCart = new EventEmitter<Product>();
 
   @Output()
   remove = new EventEmitter<Product>();

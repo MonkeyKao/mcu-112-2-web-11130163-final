@@ -2,7 +2,7 @@
   <button type="button" (click)="onAdd()">新增</button>
   <span>
     <input type="text" placeholder="查詢名稱" [formControl]="formControl" />
-    <button type="button" (click)="condition=formControl.value">查詢</button>
+    <button type="button" (click)="condition = formControl.value">查詢</button>
   </span>
 </div>
 
@@ -11,7 +11,6 @@
   [totalCount]="(totalCount$ | async) || 0"
   [(pageIndex)]="pageIndex"
   [pageSize]="pageSize"
-  (edit)="onEdit($event)"
-  (remove)="onRemove($event)"
+  (addToCart)="onAddToCart($event)"
   (view)="onView($event)"
 ></app-product-card-list>

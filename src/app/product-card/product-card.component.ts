@@ -1,5 +1,13 @@
 import { CurrencyPipe, DatePipe } from '@angular/common';
-import { Component, EventEmitter, HostBinding, Input, Output, booleanAttribute, numberAttribute } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostBinding,
+  Input,
+  Output,
+  booleanAttribute,
+  numberAttribute,
+} from '@angular/core';
 
 @Component({
   selector: 'app-product-card',
@@ -14,6 +22,9 @@ export class ProductCardComponent {
   @Input() authors!: string;
   @Input() company!: string;
   @Input({ transform: booleanAttribute }) isShow!: boolean;
+
+  @Input({ transform: booleanAttribute }) discount!: boolean;
+
   @Input() imgUrl!: string;
 
   @Input() createDate!: Date;
@@ -23,11 +34,8 @@ export class ProductCardComponent {
   class = 'product-card';
 
   @Output()
+  addToCart = new EventEmitter<void>();
+
+  @Output()
   view = new EventEmitter<void>();
-
-  @Output()
-  edit = new EventEmitter<void>();
-
-  @Output()
-  remove = new EventEmitter<void>();
 }
