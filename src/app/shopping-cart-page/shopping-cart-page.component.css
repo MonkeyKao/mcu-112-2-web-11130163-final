@@ -1,0 +1,116 @@
+:host {
+  display: block;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  gap: 50px;
+}
+
+section.form {
+  padding-bottom: 10px;
+  flex-basis: 35%;
+  border: 1px solid #ccc;
+}
+
+section.detail {
+  padding-bottom: 10px;
+  flex-basis: 65%;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  text-align: center;
+}
+
+div.form-item,
+div.item {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  line-height: 30px;
+  gap: 10px;
+}
+
+div.form-item > label {
+  flex-basis: 150px;
+  text-align: center;
+}
+
+div.form-item > input[type="text"] {
+  padding: 5px;
+  flex-grow: 1;
+  height: 20px;
+  font-size: 20px;
+}
+
+div.id {
+  flex-basis: 100px;
+  text-align: center;
+}
+
+div.name {
+  flex-grow: 1;
+}
+
+div.count {
+  flex-basis: 200px;
+  text-align: center;
+}
+
+div.count > input[type="number"] {
+  padding: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+div.delete {
+  flex-basis: 80px;
+  text-align: center;
+}
+
+div.delete button {
+  padding: 4px;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ba1a1a;
+  border: solid 1px #ba1a1a;
+}
+
+.toolbar {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.toolbar button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #005cbb;
+  border: solid 1px #005cbb;
+}
+
+.toolbar button:disabled {
+  color: #999;
+  border: solid 1px #999;
+  cursor: not-allowed;
+}
+
+span.error-message {
+  color: #ba1a1a;
+  font-size: 16px;
+}
