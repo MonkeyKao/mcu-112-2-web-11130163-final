@@ -21,4 +21,8 @@ export class ShoppingCartService {
       this.data.push(new ShoppingItem({ id, product, count: 1 }));
     }
   }
+
+  removeProduct(id: number): void {
+    this.data = [...this.data.filter((item) => item.id !== id)];
+  }
 }

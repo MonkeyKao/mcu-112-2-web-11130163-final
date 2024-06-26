@@ -35,7 +35,9 @@
         </div>
         <div class="price">{{ control.value.price | currency }}</div>
         <div class="delete">
-          <button type="button">刪除</button>
+          <button type="button" (click)="onDelete($index, control.value.id!)">
+            刪除
+          </button>
         </div>
       </div>
       }
