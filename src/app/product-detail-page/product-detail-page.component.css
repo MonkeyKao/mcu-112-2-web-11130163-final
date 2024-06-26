@@ -54,3 +54,8 @@ button.remove {
   background-color: #ba1a1a;
   color: white;
 }
+
+.discount {
+  margin-left: 10px;
+  color: red;
+}

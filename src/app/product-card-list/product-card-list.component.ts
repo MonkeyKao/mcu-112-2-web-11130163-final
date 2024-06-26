@@ -35,8 +35,5 @@ export class ProductCardListComponent {
   addToCart = new EventEmitter<Product>();
 
   @Output()
-  remove = new EventEmitter<Product>();
-
-  @Output()
   view = new EventEmitter<Product>();
 }
